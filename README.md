@@ -1,5 +1,7 @@
 # AI Analyst LAB
 
+![](_img/Ghost_TheSyntheticBanner.png)
+
 Welcome! This repository contains the course material for **AI Analyst LAB**, a hands-on course on using AI as a data analyst, by [DataKolektiv](https://datakolektiv.com).
 
 **Lecturer:** [Goran S. Milovanović, PhD](https://www.linkedin.com/in/gmilovanovic/), Chief Scientist & Owner, DataKolektiv
@@ -240,10 +242,11 @@ The Session 00 notebook is the **next** step after this README. If you cannot op
 
 ---
 
+![](_img/DK_Logo_White_150.png)
+
 ## Course details
 
 - **Course:** AI Analyst LAB
 - **Year:** 2026
 - **Lecturer:** [Goran S. Milovanović, PhD](https://www.linkedin.com/in/gmilovanovic/), Chief Scientist & Owner, [DataKolektiv](https://datakolektiv.com)
 - **Contact:** [hello@datakolektiv.com](mailto:hello@datakolektiv.com)
-- **License:** [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt)
