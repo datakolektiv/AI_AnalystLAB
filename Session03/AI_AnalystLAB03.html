@@ -8198,7 +8198,7 @@ Number of distinct tests       : 17,817
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Peek at the first 3 rows; show only the columns we will actually use to keep the output readable.</span>
-<span class="n">df</span><span class="p">[[</span><span class="s2">"clickability_test_id"</span><span class="p">,</span> <span class="s2">"headline"</span><span class="p">,</span> <span class="s2">"impressions"</span><span class="p">,</span> <span class="s2">"clicks"</span><span class="p">,</span> <span class="s2">"test_week"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[[</span><span class="s2">"clickability_test_id"</span><span class="p">,</span> <span class="s2">"headline"</span><span class="p">,</span> <span class="s2">"impressions"</span><span class="p">,</span> <span class="s2">"clicks"</span><span class="p">,</span> <span class="s2">"test_week"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8259,6 +8259,62 @@ Number of distinct tests       : 17,817
 <td>$3 Million Is What It Takes For A State To Leg...</td>
 <td>3017</td>
 <td>19</td>
+<td>201446</td>
+</tr>
+<tr>
+<th>3</th>
+<td>546dd17e26714c82cc00001c</td>
+<td>The Fact That Sometimes Innocent People Are Ex...</td>
+<td>2974</td>
+<td>26</td>
+<td>201446</td>
+</tr>
+<tr>
+<th>4</th>
+<td>546dd17e26714c82cc00001c</td>
+<td>Reason #351 To End The Death Penalty: It Costs...</td>
+<td>3050</td>
+<td>10</td>
+<td>201446</td>
+</tr>
+<tr>
+<th>5</th>
+<td>546dd17e26714c82cc00001c</td>
+<td>I Was Already Against The Death Penalty, But N...</td>
+<td>3061</td>
+<td>20</td>
+<td>201446</td>
+</tr>
+<tr>
+<th>6</th>
+<td>546dd17e26714c82cc00001c</td>
+<td>I'll Say It: It's Not OK For States To Legally...</td>
+<td>2997</td>
+<td>20</td>
+<td>201446</td>
+</tr>
+<tr>
+<th>7</th>
+<td>546dd73684ad3817bc000048</td>
+<td>The Fact That Sometimes Innocent People Are Ex...</td>
+<td>2959</td>
+<td>29</td>
+<td>201446</td>
+</tr>
+<tr>
+<th>8</th>
+<td>546dd73684ad3817bc000048</td>
+<td>The Fact That Sometimes Innocent People Are Ex...</td>
+<td>3086</td>
+<td>16</td>
+<td>201446</td>
+</tr>
+<tr>
+<th>9</th>
+<td>546dd73684ad3817bc000048</td>
+<td>The Fact That Sometimes Innocent People Are Ex...</td>
+<td>3068</td>
+<td>16</td>
 <td>201446</td>
 </tr>
 </tbody>
@@ -8786,6 +8842,42 @@ p-value              : 0.00161
 <blockquote>
 <p><strong>Why is variant B's headline more clickable?</strong> That is an editorial question, not a statistical one. The data shows the effect; explaining <em>why</em> is a separate exercise. (My speculation: "want to" softens the action; the editted version is more visceral. But that is speculation.)</p>
 </blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5177c460">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="A-small-detour-%E2%80%94-lift-and-relative-lift,-formally">A small detour — <em>lift</em> and <em>relative lift</em>, formally<a class="anchor-link" href="#A-small-detour-%E2%80%94-lift-and-relative-lift,-formally">¶</a></h3><p>The code above printed <strong>two</strong> flavours of <em>"how much better was B?"</em>. They are not the same number, and the difference matters for the memo. Let us slow down and read the formulas line by line.</p>
+<h4 id="Absolute-lift-%E2%80%94-the-gap-in-percentage-points">Absolute lift — the gap in percentage points<a class="anchor-link" href="#Absolute-lift-%E2%80%94-the-gap-in-percentage-points">¶</a></h4><p>The <strong>absolute lift</strong> is simply how many percentage points separate the two CTRs:</p>
+<p>$$\text{absolute lift} \;=\; \hat{p}_B - \hat{p}_A$$</p>
+<p>For our test:</p>
+<p>$$\hat{p}_B - \hat{p}_A \;=\; 1.17\% - 0.58\% \;=\; +0.60 \text{ pp}$$</p>
+<p>That is the <code>+0.60 percentage points</code> printed above. Absolute lift is in <strong>percentage points</strong> (pp), <em>not</em> in <em>percent</em> — a distinction stakeholders confuse constantly. Always write <strong>pp</strong> when you mean a difference between two rates.</p>
+<h4 id="Relative-lift-%E2%80%94-the-gap-as-a-fraction-of-the-baseline">Relative lift — the gap as a fraction of the baseline<a class="anchor-link" href="#Relative-lift-%E2%80%94-the-gap-as-a-fraction-of-the-baseline">¶</a></h4><p>The <strong>relative lift</strong> answers a different question: <em>"how much bigger is B's CTR <strong>as a fraction of A's CTR</strong>?"</em> That fraction is then expressed as a percentage for readability:</p>
+<p>$$\text{relative lift} \;=\; \left(\frac{\hat{p}_B}{\hat{p}_A} - 1\right) \times 100\% \;=\; \frac{\hat{p}_B - \hat{p}_A}{\hat{p}_A} \times 100\%$$</p>
+<p>The two right-hand sides are algebraically identical. The second form makes the meaning unmistakable: <em>"the gap between B and A, divided by the baseline A."</em></p>
+<p>Walking through the <strong>first</strong> form left-to-right with our numbers:</p>
+<ol>
+<li><strong><code>b_ctr / a_ctr</code></strong> — the <strong>ratio</strong> of B's CTR to A's CTR: $\;0.01174 \,/\, 0.00577 \;\approx\; 2.035$. <em>"B is about 2.035 times A."</em></li>
+<li><strong><code>- 1</code></strong> — strip away the part of B that simply <em>matches</em> A; what is left is the <em>extra</em>, expressed as a fraction of A: $\;2.035 - 1 = 1.035$.</li>
+<li><strong><code>* 100</code></strong> — turn the fraction into a percentage humans read naturally: $\;1.035 \times 100\% \approx 103.5\%$, rounded for display by <code>:+.0f%</code> to <strong>+104%</strong>.</li>
+</ol>
+<p>So <em>"the relative lift is +104%"</em> literally means <em>"B's CTR is 104% higher than A's CTR"</em> — equivalently, <em>"B's CTR is roughly 2.04 times A's CTR."</em></p>
+<h4 id="Why-the-same-data-gives-two-very-different-sounding-numbers">Why the same data gives two very different-sounding numbers<a class="anchor-link" href="#Why-the-same-data-gives-two-very-different-sounding-numbers">¶</a></h4><p>The absolute lift (+0.60 pp) and the relative lift (+104%) describe the <strong>same effect</strong>. The relative number sounds dramatic because A's baseline is tiny: when the denominator $\hat{p}_A$ is small, even a small <em>absolute</em> gap balloons into a large <em>relative</em> gap. The reverse is also true — a +0.60 pp lift on top of a 50% baseline would be a relative lift of only $\;0.60\,/\,50 \times 100\% = \textbf{+1.2\%}$: same arithmetic, completely different business framing.</p>
+<blockquote>
+<p><strong>One subtle but important rule.</strong> The baseline goes in the <strong>denominator</strong>. A is the baseline; B is the challenger. Computing the relative lift the other way around, $\left(\hat{p}_A \,/\, \hat{p}_B - 1\right) \times 100\%$, gives <strong>−50.85%</strong>, not −104% — you cannot lose more than 100% of something, but you can gain unboundedly. Always state which group is the baseline, and keep that group as the denominator.</p>
+</blockquote>
+<p>For the memo, the two lifts answer two different leadership questions:</p>
+<ul>
+<li><strong>Absolute lift</strong> — <em>"by how many percentage points did CTR move?"</em> Operationally meaningful for forecasting incremental clicks at fixed traffic.</li>
+<li><strong>Relative lift</strong> — <em>"by what multiple did CTR move?"</em> This is the <em>"we doubled CTR!"</em> framing your stakeholders will quote.</li>
+</ul>
+<p>An honest memo reports <strong>both</strong>, with the absolute lift first.</p>
 <h3 id="Visualize-the-result">Visualize the result<a class="anchor-link" href="#Visualize-the-result">¶</a></h3>
 </div>
 </div>
@@ -9723,22 +9815,22 @@ If (1) is <em>no</em>: do not ship — the data does not yet support a winner.</
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>-- metric_definition --
-  Click-through rate, defined as clicks divided by impressions, measured per visitor's first impression.
+  Click-through rate, measured as the number of clicks divided by the number of impressions, with the unit of analysis being each visitor's first impression.
 
 -- null_hypothesis --
-  The click-through rate is equal between the two headline variants.
+  There is no difference in click-through rate between the two headline variants.
 
 -- alternative_hypothesis --
-  The click-through rate differs between the two headline variants (two-sided).
+  There is a difference in click-through rate between the two headline variants (two-sided test).
 
 -- test_choice_and_assumptions --
-  We use a two-proportion z-test, which assumes that the number of impressions in each variant is large enough for normal approximation (typically n &gt; 30 per cell) and that impressions are independent.
+  We use a two-proportion z-test, which assumes each visitor's first impression is independent, the number of clicks and impressions in each variant are sufficiently large for normal approximation, and there is no interference between variants.
 
 -- significance_level_and_decision_rule --
-  We pre-commit to alpha = 0.05; we reject the null hypothesis and declare a winner if the two-tailed p-value is less than 0.05.
+  We pre-commit to alpha = 0.05 and will declare a statistically significant difference if the two-sided p-value is less than 0.05.
 
 -- multiple_testing_note --
-  This is a single pre-registered test, so no multiple-testing correction is needed.
+  This is a single pre-registered test, so no multiple-testing correction is applied.
 
 </pre>
 </div>
@@ -9861,7 +9953,9 @@ Relative lift: about 104%.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Variant B's revised headline drove roughly double the click-through rate, gaining 0.60 percentage points over Variant A (1.17% versus 0.58%). We can be 95% confident the true difference falls between 0.24 and 0.96 percentage points. This result is statistically significant with a p-value of 0.00161, meaning it's highly unlikely to have occurred by chance. The simpler phrasing—removing "To Want"—appears to resonate more strongly with readers. We recommend adopting Variant B's headline for this content type going forward.
+<pre># Headline Findings
+
+Variant B's revised wording drove substantially stronger engagement, nearly doubling the click-through rate to 1.17% compared to Variant A's 0.58%—an absolute gain of 0.60 percentage points. We can be 95% confident the true difference between these headlines falls between 0.24 and 0.96 percentage points, indicating this effect is robust and not due to chance (p = 0.00161). This represents a relative lift of approximately 104%, meaning the simpler phrasing "made me run" outperformed the more elaborate "made me want to run screaming out of." Given the consistent, sizable improvement in both absolute and relative terms, we recommend deploying Variant B as the standard headline for this content category.
 </pre>
 </div>
 </div>
