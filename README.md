@@ -1,6 +1,6 @@
 # AI Analyst LAB
 
-![](_img/Ghost_TheSyntheticBanner.png)
+![](_img/ai_analyst_lab.png)
 
 Welcome! This repository contains the course material for **AI Analyst LAB**, a hands-on course on using AI as a data analyst, by [DataKolektiv](https://datakolektiv.com).
 

@@ -1,6 +1,6 @@
 # AI ANALYST LAB
 
-![](../_img/Ghost_TheSyntheticBanner.png)
+![](../_img/ai_analyst_lab.png)
 
 ### A Hands-on Course on AI for Data Analysts
 ## Setting up your Claude Project tutors

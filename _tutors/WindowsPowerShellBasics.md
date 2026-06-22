@@ -1,6 +1,6 @@
 # AI ANALYST LAB
 
-![](../_img/Ghost_TheSyntheticBanner.png)
+![](../_img/ai_analyst_lab.png)
 
 ### A Hands-on Course on AI for Data Analysts
 ## Windows PowerShell — a gentle crash course
