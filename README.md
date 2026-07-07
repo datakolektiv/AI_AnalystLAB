@@ -8,7 +8,7 @@ Welcome! This repository contains the course material for **AI Analyst LAB**, a 
 
 ---
 
-## What this README is for
+## 👋 What this README is for
 
 This README walks you through the **one-time setup** of getting the course code onto your computer. After this, every week your instructor will add new sessions, and you will just run a single command (`git pull`) to update your local copy.
 
@@ -18,7 +18,7 @@ If you get stuck for more than a few minutes on any step, contact your instructo
 
 ---
 
-## A two-minute glossary (for absolute beginners)
+## 📖 A two-minute glossary (for absolute beginners)
 
 If any of these words feel unfamiliar, read them once and move on. They will start to make sense as you do each step.
 
@@ -31,7 +31,7 @@ If any of these words feel unfamiliar, read them once and move on. They will sta
 
 ---
 
-## What you will do (overview)
+## 🗺️ What you will do (overview)
 
 You will go through three numbered steps to get the course code onto your computer:
 
@@ -45,7 +45,7 @@ After those steps, a separate **Set up your Claude API access** section walks yo
 
 ---
 
-## Step 1 — Install Git (skip if you already have it)
+## 🧰 Step 1 — Install Git (skip if you already have it)
 
 ### Open your terminal
 
@@ -99,7 +99,7 @@ sudo apt install -y git
 
 ---
 
-## Step 2 — Clone the repository
+## 📥 Step 2 — Clone the repository
 
 This is the step where the course code lands on your computer.
 
@@ -141,7 +141,7 @@ This is the step where the course code lands on your computer.
 
 ---
 
-## Step 3 — Pulling future updates
+## 🔄 Step 3 — Pulling future updates
 
 Whenever your instructor adds new course material, you do **not** clone the repository again. Instead, you "pull" the new changes into your existing folder.
 
@@ -161,7 +161,7 @@ That is all. No password, no token — `git pull` just downloads the latest chan
 
 ---
 
-## Set up your Claude API access
+## 🔑 Set up your Claude API access
 
 Throughout this course you will write Python in your notebooks that **calls the Claude API** — meaning your code will send a question to Claude over the internet and get back an answer, with no chat window open. The API is **separate from the Claude chat app** at [https://claude.ai](https://claude.ai), and it needs its own setup. This section walks you through it, step by step.
 
@@ -296,7 +296,7 @@ After Steps 1–5 you have an account, a funded balance, a saved API key, and yo
 
 ---
 
-## Common things that go wrong
+## 🧩 Common things that go wrong
 
 - **`git: command not found`** or **`'git' is not recognized`** — Git is not installed yet, or your terminal has not picked it up. Close the terminal, open a new one, and try again. If that still does not work, go back to **Step 1**.
 - **`fatal: destination path 'AI_AnalystLAB' already exists and is not an empty directory`** — you already cloned the repository. Either skip the clone and run `git pull` instead (Step 3), or delete the existing `AI_AnalystLAB` folder and re-run the clone.
@@ -304,7 +304,7 @@ After Steps 1–5 you have an account, a funded balance, a saved API key, and yo
 
 ---
 
-## What's next?
+## ▶️ What's next?
 
 Once you have the `AI_AnalystLAB` folder on your computer:
 
@@ -318,7 +318,7 @@ The Session 00 notebook is the **next** step after this README. If you cannot op
 
 ![](_img/DK_Logo_White_150.png)
 
-## Course details
+## 🎓 Course details
 
 - **Course:** AI Analyst LAB
 - **Year:** 2026
