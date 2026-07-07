@@ -90,6 +90,16 @@ Where the upstream source also publishes a `README`, codebook, or guidance docum
 
 ---
 
+## 7. `titanic/` — Titanic passenger dataset (teaching demo)
+
+- **Used in:** Session 08 (Decision trees) — as the **introductory classification example only**, before the session moves on to the course's own datasets (Iranian Churn for classification, Wine Quality for regression).
+- **Source:** the widely-redistributed *"Titanic: Machine Learning from Disaster"* training set (as popularised by Kaggle), itself derived from the passenger manifest compiled by the Department of Biostatistics at **Vanderbilt University** (Thomas Cason's cleaned edition), originating from **Encyclopedia Titanica**.
+- **Nature / license:** the underlying records are **historical facts in the public domain** (the 1912 RMS Titanic passenger list). The dataset is distributed freely for educational use and is one of the most widely reused teaching datasets in machine learning.
+- **Why it is here:** it gives absolute beginners a small, intuitive, two-class problem (`Survived` vs not) whose splits — *"was the passenger in first class?"*, *"female or male?"* — read like plain-English decision rules, which is exactly the intuition Session 08 is building before we apply trees to the course's own business data.
+- **Files included:** `Titanic_train.csv` (891 passengers). Columns used in the session: `Survived` (target), `Pclass`, `Sex`, `Age`.
+
+---
+
 ## A short note on responsible use in this course
 
 - **Attribution is the price of CC BY 4.0.** When participants reuse any of these datasets in their portfolio, blog posts, or talks after the course, they must keep the citation visible.
