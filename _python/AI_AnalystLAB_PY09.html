@@ -8003,7 +8003,8 @@ Age:  22
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="4.-The-magic-%E2%80%94-it-checks">4. The magic — it <em>checks</em><a class="anchor-link" href="#4.-The-magic-%E2%80%94-it-checks">¶</a></h2><p>Now the whole point. Let's hand pydantic the same nonsense that a plain class swallowed — an age of <code>"banana"</code> — and watch what happens. We wrap it in a <strong><code>try / except</code></strong> (the calm error-handling idea from Session 3) so we can read pydantic's complaint nicely instead of a scary red crash:</p>
+<h2 id="4.-The-magic-%E2%80%94-it-checks">4. The magic — it <em>checks</em><a class="anchor-link" href="#4.-The-magic-%E2%80%94-it-checks">¶</a></h2><p>Now the whole point. Let's hand pydantic the same nonsense that a plain class swallowed — an age of <code>"banana"</code> — and watch what happens.</p>
+<p>To do it safely, we'll meet one small <strong>new</strong> tool: <strong><code>try</code> / <code>except</code></strong>. It is Python's way of saying <em>"<strong>try</strong> to run this; if it fails, don't crash the whole program — jump to the <strong><code>except</code></strong> part and handle it calmly instead."</em> Back in Session 3 you learned to <em>read</em> Python's red error messages; <code>try</code> / <code>except</code> is how you <em>catch</em> one on purpose. Here we use it so pydantic's complaint prints as a tidy line rather than a scary crash:</p>
 </div>
 </div>
 </div>
