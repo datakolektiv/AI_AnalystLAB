@@ -304,6 +304,52 @@ After Steps 1–5 you have an account, a funded balance, a saved API key, and yo
 
 ---
 
+## 🐍 Never written code before? Start with the Python Crash Course
+
+**If you have never programmed in your life, do not jump straight into the main sessions — begin with the Python Crash Course in the [`_python/`](_python/) folder.**
+
+It is a gentle, self-contained introduction to Python written for **absolute beginners** — people who have never heard of a variable or a loop. It assumes **zero** prior coding experience and introduces every new idea with a plain, real-world analogy *before* any code appears.
+
+Its one and only goal is that you can **UNDERSTAND** the Python you will meet in this course — read a piece of code, follow what it does, and reason about it. You are **not** here to become a software engineer, a developer, or a "real programmer." In AI Analyst LAB you will mostly work *alongside* an AI that writes code for you, and to do that well you need to *understand* what the code is doing. That understanding — nothing more, nothing less — is exactly what the crash course gives you.
+
+It is ten short notebooks (a relaxed **two-to-three-week** warm-up), each building on the last, following a single running example — the passengers of the Titanic — as it grows in complexity:
+
+| # | Notebook (in [`_python/`](_python/)) | What you learn |
+|---|---|---|
+| 0 | [`AI_AnalystLAB_PY00.ipynb`](_python/AI_AnalystLAB_PY00.ipynb) | Install Python & IDLE, and print "Hello World" |
+| 1 | [`AI_AnalystLAB_PY01.ipynb`](_python/AI_AnalystLAB_PY01.ipynb) | Variables and the basic kinds of value |
+| 2 | [`AI_AnalystLAB_PY02.ipynb`](_python/AI_AnalystLAB_PY02.ipynb) | Lists, dictionaries & tuples |
+| 3 | [`AI_AnalystLAB_PY03.ipynb`](_python/AI_AnalystLAB_PY03.ipynb) | Logic, loops & functions |
+| 4 | [`AI_AnalystLAB_PY04.ipynb`](_python/AI_AnalystLAB_PY04.ipynb) | NumPy — fast maths on many numbers |
+| 5 | [`AI_AnalystLAB_PY05.ipynb`](_python/AI_AnalystLAB_PY05.ipynb) | pandas — your first real data table |
+| 6 | [`AI_AnalystLAB_PY06.ipynb`](_python/AI_AnalystLAB_PY06.ipynb) | pandas — grouping & summarising |
+| 7 | [`AI_AnalystLAB_PY07.ipynb`](_python/AI_AnalystLAB_PY07.ipynb) | Plotting — turning numbers into pictures |
+| 8 | [`AI_AnalystLAB_PY08.ipynb`](_python/AI_AnalystLAB_PY08.ipynb) | Objects — the "things" behind the dot |
+| 9 | [`AI_AnalystLAB_PY09.ipynb`](_python/AI_AnalystLAB_PY09.ipynb) | pydantic — data with a guaranteed shape |
+
+Every notebook comes with a matching **`.html`** file in [`_python/`](_python/) — open it in any web browser if you would simply like to *read* a session without running anything.
+
+> **Two practical notes.**
+> - The crash course uses **IDLE**, the simplest free Python editor (it installs together with Python in [`AI_AnalystLAB_PY00.ipynb`](_python/AI_AnalystLAB_PY00.ipynb)), so there is nothing extra to set up. The main course later uses **VS Code**, but the Python you learn is exactly the same.
+> - The crash course makes **no Claude API calls**, so you do **not** need your API key (the "Set up your Claude API access" section above) to work through it. If you already read Python comfortably, you may skip the crash course and go straight to the main course.
+
+---
+
+## 🔁 The Review sessions — the ideas behind the analyses
+
+Alongside the main sessions, the [`_reviews/`](_reviews/) folder holds four **Review** notebooks. Their job is to **strengthen your understanding of the concepts the sessions rely on** — the probability, statistics, and information-theory ideas that sit *underneath* the analyses. The main sessions stay focused on *doing* the analysis; the reviews are where you slow down and firm up *why* it works.
+
+They are **optional but recommended**: read a review whenever you want the theory behind a session to click properly. Each also has a matching **`.html`** file in [`_reviews/`](_reviews/) you can simply open and read in a browser.
+
+| Review (in [`_reviews/`](_reviews/)) | What it firms up | Pairs well with |
+|---|---|---|
+| [`AI_AnalystLAB_R01.ipynb`](_reviews/AI_AnalystLAB_R01.ipynb) — *Augmenting Data Analysis with LLMs* | Working with an LLM from Python: messages, structured output, tool use | Session 01 |
+| [`AI_AnalystLAB_R02.ipynb`](_reviews/AI_AnalystLAB_R02.ipynb) — *Probability and Statistics* | Distributions, sampling, the Central Limit Theorem, confidence intervals | Sessions 01–03 |
+| [`AI_AnalystLAB_R03.ipynb`](_reviews/AI_AnalystLAB_R03.ipynb) — *Information Theory* | Entropy and information gain | Session 08 (decision trees) |
+| [`AI_AnalystLAB_R04.ipynb`](_reviews/AI_AnalystLAB_R04.ipynb) — *Mathematical Statistics* | Estimators, likelihood, and the maths behind regression | Sessions 04–05 |
+
+---
+
 ## ▶️ What's next?
 
 Once you have the `AI_AnalystLAB` folder on your computer:
