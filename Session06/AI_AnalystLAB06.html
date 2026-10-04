@@ -8006,6 +8006,9 @@ a.anchor-link {
 <span class="c1"># silhouette_score measures how well-separated a clustering is — one of our "how many clusters?" tools.</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">silhouette_score</span>
 
+<span class="c1"># Markdown and display let us render rich Markdown output directly in the notebook.</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">display</span>
+
 <span class="c1"># Tell Jupyter to draw plots directly under each cell.</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 
@@ -9898,23 +9901,23 @@ Segment 2 'Fresh-Focused Food Service': 213 customers (48.4% of base); total ann
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>== Segment 0: Grocery &amp; Household-Goods Retailers ==
-   Who they are: These 80 customers are primarily retail-focused (48 retail, 32 Horeca) who spend heavily on Grocery (12,570) and Detergents_Paper (5,554), with strong Milk spend (7,136). They are the smallest segment by volume but derive 16.2% of total company spend. Fresh spending (2,899) and Frozen (607) are notably low relative to the portfolio, making them distinctly non-perishable-focused.
-   Sales play:   Lead with bundle opportunities combining Grocery and Detergents_Paper, their two dominant categories. Develop volume discounts for reliable, high-margin household goods and packaged grocery items. Position private-label dry goods and cleaning products to capture larger shelf space in their retail locations.
-   Retention:    Secure quarterly business reviews focused on inventory turns in Grocery and Detergents_Paper. Offer merchandising support and promotional calendar planning for their highest-margin categories. Protect against competitive loss by locking in pricing on their core household and grocery assortment.
+   Who they are: This segment of 80 customers (18.2% of the base) generates 16.2% of total spend, with a heavily skewed basket: they spend 12,570 m.u. annually on Grocery—more than 4× the company average—and 5,554 m.u. on Detergents &amp; Paper, while spending only 607 m.u. on Frozen and 783 m.u. on Delicassen. Nearly 60% are retail channels, and Fresh spend (2,899 m.u.) is well below average.
+   Sales play:   Target these retailers with bundle and promotional plays around Grocery and Detergents &amp; Paper, since those two categories account for the bulk of their basket. Offer volume discounts or category-linked bundles (e.g., shelf-stable grocery with cleaning supplies) to deepen penetration in their core purchasing sweet spot.
+   Retention:    These are steady, low-churn customers but concentrated in two categories. Protect this segment with consistent availability and pricing on Grocery and Detergents &amp; Paper, and conduct quarterly business reviews focused on those categories to ensure their needs remain met.
 
 == Segment 1: High-Volume All-Rounders ==
-   Who they are: These 147 customers are the company's largest revenue engine, delivering 53.2% of total spend (7.8M m.u.). Balanced across channels (56 Horeca, 91 Retail), they spend significantly across all categories, with especially strong Fresh (17,043), Grocery (13,334), and Milk (10,560). Frozen (4,133) and Delicassen (2,847) round out their basket, making them true multi-category buyers.
-   Sales play:   Target growth in Frozen and Delicassen categories where they currently trail portfolio averages. Develop integrated promotional campaigns bundling Fresh + Grocery + Milk. Offer category management support and performance-based rebates to incentivize share-of-wallet expansion in underindexed categories.
-   Retention:    Assign dedicated account management to protect this segment's 53% of revenue. Provide monthly category performance dashboards and joint business planning on Fresh, Milk, and Grocery. Develop long-term supply agreements with volume commitments to lock in their multi-category dependency.
+   Who they are: This segment of 147 customers (33.4% of the base) delivers 53.2% of total spend and is the largest revenue contributor. They buy across all six categories with notably high spend: Fresh (17,043 m.u.), Milk (10,560 m.u.), and Grocery (13,334 m.u.) are all well above average, supplemented by strong Frozen (4,133 m.u.) and Delicassen (2,847 m.u.) purchases. They span both Horeca (56) and Retail (91) channels.
+   Sales play:   These customers reward cross-category selling; build a dedicated account management approach that cycles through promotions and new-item introductions across Fresh, Milk, Grocery, and Frozen monthly. Invest in relationship depth here because this segment alone drives over half the company's revenue.
+   Retention:    Assign senior account managers and prioritize these customers for new product trials, exclusive offers on premium lines, and proactive communication around supply disruptions. Quarterly business reviews should map their full category mix to identify upsell opportunities in Delicassen and Frozen while protecting share in Fresh, Milk, and Grocery.
 
 == Segment 2: Fresh-Focused Food Service ==
-   Who they are: These 213 customers (48.4% of base) are heavily Horeca-concentrated (210 food service, 3 retail) generating 30.6% of total spend. They are defined by dominant Fresh purchasing (11,939) and meaningful Frozen (3,266) spend, but minimal Grocery (2,502), Milk (2,006), and virtually no Detergents_Paper (424). They are specialist perishable buyers, not general provision merchants.
-   Sales play:   Focus sales efforts on Fresh and Frozen categories where they concentrate spend. Develop food-service-specific offerings: convenient portion sizes, delivery frequency optimization, and seasonal protein/vegetable programs. Upsell frozen prepared items and specialty proteins to complement their fresh base business.
-   Retention:    Support their operational needs with reliable Fresh delivery schedules and quality guarantees. Offer waste-reduction consultations and menu-planning tools tied to seasonal Fresh availability. Monitor competitive threats on Fresh pricing and maintain service reliability as the primary lock against churn.
+   Who they are: This segment of 213 customers (48.4% of the base) comprises 30.6% of total spend and is heavily Horeca-skewed (210 of 213 are food service). Their basket is sharply concentrated: Fresh spend (11,939 m.u.) is near the company average, but Milk (2,006 m.u.) is 65% below average, Grocery (2,502 m.u.) is 69% below, and Detergents &amp; Paper (424 m.u.) is 85% below. Frozen (3,266 m.u.) and Delicassen (891 m.u.) are their secondary categories.
+   Sales play:   Focus on deepening Fresh and Frozen penetration through food-service-specific offerings: chef-preferred cuts, portion sizes, and seasonal items. Introduce category-relevant bundles (Fresh + Frozen for meal preparation) and competitive case pricing to increase wallet share in food service.
+   Retention:    Serve these customers with direct sales coverage and same-or-next-day delivery reliability on Fresh and Frozen—operational excellence is critical for Horeca retention. Build relationships with head chefs and purchasing managers; offer tasting events or seasonal specials to strengthen Fresh attach and introduce Delicassen as a value-add.
 
-Portfolio note: The High-Volume All-Rounders (Segment 1) dominate the portfolio at 53.2% of spend, while Fresh-Focused Food Service (Segment 2) is the largest by customer count (213) but generates only 30.6% of revenue. Grocery &amp; Household-Goods Retailers (Segment 0), though only 18.2% of the base, punch above their weight in Detergents_Paper and Grocery. Commercial effort should prioritize protecting and growing High-Volume All-Rounders' share, while leveraging Segment 2's density for operational efficiency and targeted Fresh category growth.
+Portfolio note: Annual spend is concentrated in Segment 1 (High-Volume All-Rounders), which delivers 53.2% of total revenue with just one-third of customers, making them the strategic priority for account management and cross-category development. Segment 2 (Fresh-Focused Food Service) is the largest customer cohort at 48.4% but generates only 30.6% of spend—growth here depends on deepening Fresh and Frozen sales per account. Segment 0 (Grocery &amp; Household-Goods Retailers) is the smallest and lowest-revenue segment, but offers stability and opportunity for category-specific bundle strategies in Grocery and Detergents &amp; Paper."
 
-Caveats: This playbook describes the spending patterns of these 440 customers and is not a forecast about new customer acquisition or future behavior. K-means clustering draws hard boundaries through what is really a continuum of customer behavior; small shifts in spend could move customers between segments. These segments reflect historical annual spend across product categories only and do not account for profitability by category, customer lifetime value, or strategic importance to the company's broader business objectives.
+Caveats: This playbook describes the 440 customers in this segmentation and their current spending patterns; it is not a forecast or predictive model for new customers. K-means clustering draws hard boundaries through what is actually a continuum of spending behavior, so customer movement between segments is possible as purchasing patterns evolve. These segments reflect annual spend distribution only and do not account for profitability, customer lifetime value, or strategic importance beyond revenue volume."
 </pre>
 </div>
 </div>
@@ -9964,8 +9967,8 @@ Caveats: This playbook describes the spending patterns of these 440 customers an
     <span class="p">],</span>
 <span class="p">)</span>
 
-<span class="c1"># Print Anthropic's paragraph.</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">memo_response</span><span class="o">.</span><span class="n">content</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="c1"># Render Anthropic's paragraph as rich Markdown.</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">memo_response</span><span class="o">.</span><span class="n">content</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -9977,9 +9980,8 @@ Caveats: This playbook describes the spending patterns of these 440 customers an
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>We segment the 440 wholesale customers into three groups, with the High-Volume All-Rounders driving the most revenue at 7.8 million m.u. annually (53% of total spend). The Grocery &amp; Household-Goods Retailers, representing 80 customers, focus heavily on grocery and detergent purchases with average annual spend of 12,570 and 5,554 m.u. respectively. The High-Volume All-Rounders, our largest revenue segment at 147 customers, buy consistently across all categories, led by fresh (17,043 m.u.) and grocery (13,334 m.u.). The Fresh-Focused Food Service segment, our largest customer base at 213 accounts, concentrates spending on fresh products (11,939 m.u.) and frozen items (3,266 m.u.), with minimal grocery and detergent purchases. This segmentation describes the spending patterns of these 440 existing customers and should not be interpreted as predictive of future customer behavior.
-</pre>
+<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output" data-mime-type="text/markdown" tabindex="0">
+<h1 id="Headline">Headline<a class="anchor-link" href="#Headline">¶</a></h1><p>We've segmented our 440 wholesale customers into three groups, with the High-Volume All-Rounders driving 53.2% of total revenue at 7.8 million m.u. annually. Grocery &amp; Household-Goods Retailers (80 customers, 16.2% of revenue) buy primarily grocery and detergents with a balanced mix of Horeca and retail channels. High-Volume All-Rounders (147 customers) purchase across all categories with particular strength in fresh and milk products, split roughly evenly between Horeca and retail. Fresh-Focused Food Service (213 customers, 30.6% of revenue) concentrates heavily on fresh products and frozen goods, almost exclusively through Horeca channels. This segmentation describes our current customer base; it does not predict how new customers will distribute across these groups.</p>
 </div>
 </div>
 </div>
