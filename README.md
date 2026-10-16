@@ -347,6 +347,7 @@ They are **optional but recommended**: read a review whenever you want the theor
 | [`AI_AnalystLAB_R02.ipynb`](_reviews/AI_AnalystLAB_R02.ipynb) — *Probability and Statistics* | Distributions, sampling, the Central Limit Theorem, confidence intervals | Sessions 01–03 |
 | [`AI_AnalystLAB_R03.ipynb`](_reviews/AI_AnalystLAB_R03.ipynb) — *Information Theory* | Entropy and information gain | Session 08 (decision trees) |
 | [`AI_AnalystLAB_R04.ipynb`](_reviews/AI_AnalystLAB_R04.ipynb) — *Mathematical Statistics* | Estimators, likelihood, and the maths behind regression | Sessions 04–05 |
+| [`AI_AnalystLAB_R05.ipynb`](_reviews/AI_AnalystLAB_R05.ipynb) — *Exponentials and Logarithms* | Logs & exp from scratch — the logit, sigmoid, odds ratios, and log-likelihood (no calculus) | Session 05, R04 |
 
 ---
 
