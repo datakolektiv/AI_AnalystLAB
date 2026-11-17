@@ -222,3 +222,7 @@ __marimo__/
 
 # Course-private source materials — never publish to the public repo
 _sources/
+
+# Word curriculum source — only the exported PDF is tracked/published
+_docs/*.docx
+~$*
